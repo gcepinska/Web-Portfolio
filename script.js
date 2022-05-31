@@ -1,5 +1,6 @@
 'use strict';
 
+const btnNav = document.querySelector('.btn-mobile-nav');
 const btnOpenInfo = document.querySelectorAll('.btn_info');
 const modals = document.querySelectorAll('.modal');
 const infoOverlay = document.querySelector('.info-overlay');
@@ -27,6 +28,12 @@ const sectionAboutObserver = new IntersectionObserver(stickyNav, {
 });
 sectionAboutObserver.observe(sectionAbout);
 
+///// Mobile Navigation
+
+btnNav.addEventListener('click', function () {
+  nav.classList.toggle('nav-open');
+});
+
 ///// Scroll to
 
 document
@@ -37,6 +44,10 @@ document
     if (e.target.classList.contains('main-nav-link')) {
       const id = e.target.getAttribute('href');
       document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    if (e.target.classList.contains('main-nav-link')) {
+      nav.classList.toggle('nav-open');
     }
   });
 

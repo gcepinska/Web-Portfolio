@@ -8,10 +8,7 @@
     font-size: 4.4rem;
   }
 
-  .gallery {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-  }
+ 
   .section-cv {
     max-width: 120rem;
   }
@@ -25,6 +22,10 @@
   }
   .section-about h1 {
     font-size: 3.6rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
 }
 
@@ -43,7 +44,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    transform: translateX(100%);
+    transform: translateY(-100%);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -57,15 +58,15 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
-  .nav-open .icon-mobile-nav[name="close-outline"]{
-    display:block;
-    }
-  .nav-open .icon-mobile-nav[name="menu-outline"]{
-    display:none;
-    }
+  .nav-open .icon-mobile-nav[name='close-outline'] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
+    display: none;
+  }
 
   .main-nav-link:link,
   .main-nav-link:visited {
@@ -74,6 +75,42 @@
 }
 
 /* Below 704px (Small Tablets) */
-@media(max-width:44em){
+@media (max-width: 44em) {
+  html {
+    font-size: 45%;
+  }
+  #name {
+    font-size: 2rem;
+  }
 
+  .section-about {
+    text-align: center;
+  }
+  .about-text-col {
+    max-width: 100%;
+  }
+  .btn-contact {
+   display: inline-block;
+   text-align: center;
+  
+  }
+
+  .gallery {
+    grid-template-columns:  1fr;
+    gap: 1rem;
+  }
+
+  .experience-container {
+    width: 100%;
+  }
+  .experience-small {
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    /* text-align: center; */
+    gap: 4rem;
+  }
+
+  .experience-full {
+    width: 100%;
+  }
 }
