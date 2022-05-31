@@ -75,6 +75,13 @@ body {
   user-select: none;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
 .section-hidden {
   opacity: 0;
   transform: translateY(8rem);
@@ -84,9 +91,11 @@ body {
 /* NAVIGATION */
 /**************************/
 
+
+
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   background-color: none;
   width: 100%;
@@ -127,6 +136,21 @@ body {
   transition: all 0.3s;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.4rem;
+  width: 4.4rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"]{
+display:none;
+}
 /**************************/
 /* ABOUT */
 /**************************/
@@ -359,7 +383,7 @@ body {
 /**************************/
 /* CV */
 /**************************/
-.section-cv{
+.section-cv {
   max-width: 130rem;
 }
 /**************************/
@@ -485,11 +509,11 @@ body {
   letter-spacing: 0.1rem;
 }
 
-.education p{
-  margin-bottom:1rem;
+.education p {
+  margin-bottom: 1rem;
 }
 
-.skills{
+.skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-size: 1.6rem;
@@ -497,8 +521,8 @@ body {
   letter-spacing: 0.1rem;
 }
 
-.skills p{
-  margin-bottom:1rem;
+.skills p {
+  margin-bottom: 1rem;
 }
 /* .slide_tab--1 {
 
