@@ -1,0 +1,29 @@
+/* Below 1344 px (smaller desktops */
+
+@media (max-width: 84em) {
+  .section-about {
+    max-width: 120rem;
+  }
+  .section-about h1 {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .section-cv {
+    max-width: 120rem;
+  }
+}
+
+/* Below 1200px (Lanscape tablets) */
+
+@media (max-width: 75rem) {
+  html {
+    font-size: 56.25%; 
+  }
+  .section-about h1 {
+    font-size: 3.6rem;
+  }
+}
