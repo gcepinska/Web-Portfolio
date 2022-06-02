@@ -8,7 +8,6 @@
     font-size: 4.4rem;
   }
 
- 
   .section-cv {
     max-width: 120rem;
   }
@@ -23,10 +22,10 @@
   .section-about h1 {
     font-size: 3.6rem;
   }
-  .gallery {
+  /* .gallery {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-  }
+  } */
 }
 
 /* Below 944px (Tablets) */
@@ -72,6 +71,11 @@
   .main-nav-link:visited {
     font-size: 3rem;
   }
+
+  .gallery-section {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
 /* Below 704px (Small Tablets) */
@@ -95,10 +99,6 @@
   
   }
 
-  .gallery {
-    grid-template-columns:  1fr;
-    gap: 1rem;
-  }
 
   .experience-container {
     width: 100%;

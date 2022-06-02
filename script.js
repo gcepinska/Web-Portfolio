@@ -11,10 +11,11 @@ const sectionInvestments = document.querySelector('.section-investments');
 const experienceInfo = document.querySelector('.experience-full');
 const btnOpenWorkInfo = document.querySelectorAll('.open-btn');
 const btnCloseWorkInfo = document.querySelectorAll('.close-btn');
+const header = document.querySelector('.header');
 
 ///// Sticky Navigation
 
-const navHEight = nav.getBoundingClientRect().height;
+const navHeight = nav.getBoundingClientRect().height;
 const stickyNav = function (entries) {
   const [entry] = entries;
   if (!entry.isIntersecting) nav.classList.add('sticky');
@@ -24,7 +25,7 @@ const stickyNav = function (entries) {
 const sectionAboutObserver = new IntersectionObserver(stickyNav, {
   root: null,
   threshold: 0,
-  rootMatgin: `-${navHEight}px`,
+  rootMargin: `-${navHeight}px`,
 });
 sectionAboutObserver.observe(sectionAbout);
 
@@ -34,7 +35,7 @@ btnNav.addEventListener('click', function () {
   nav.classList.toggle('nav-open');
 });
 
-///// Scroll to
+///// Navigation - Scroll to sections
 
 document
   .querySelector('.main-nav-list')
@@ -50,6 +51,9 @@ document
       nav.classList.toggle('nav-open');
     }
   });
+
+
+
 
 ///// Menu fade animation
 
