@@ -72,10 +72,7 @@
     font-size: 3rem;
   }
 
-  .gallery-section {
-    flex: 50%;
-    max-width: 50%;
-  }
+
 }
 
 /* Below 704px (Small Tablets) */

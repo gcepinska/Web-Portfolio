@@ -35,7 +35,7 @@ btnNav.addEventListener('click', function () {
   nav.classList.toggle('nav-open');
 });
 
-///// Navigation - Scroll to sections
+///// Navigation - Scroll to sections smooth
 
 document
   .querySelector('.main-nav-list')
@@ -44,16 +44,15 @@ document
 
     if (e.target.classList.contains('main-nav-link')) {
       const id = e.target.getAttribute('href');
-      document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+      document
+        .querySelector(id)
+        .scrollIntoView({ behavior: 'smooth' });
     }
 
     if (e.target.classList.contains('main-nav-link')) {
       nav.classList.toggle('nav-open');
     }
   });
-
-
-
 
 ///// Menu fade animation
 
