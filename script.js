@@ -109,8 +109,7 @@ const showMoreWork = function (id) {
   const w = document.getElementById(id);
   w.classList.remove('hidden');
   const b = document
-    .querySelectorAll(`[data-btn="' + id + '"]`)
-    // .querySelectorAll('[data-btn="' + id + '"]')
+    .querySelectorAll('[data-btn="' + id + '"]')
     .forEach(btn => btn.classList.toggle('hidden'));
 };
 
