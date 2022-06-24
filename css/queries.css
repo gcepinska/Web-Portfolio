@@ -305,6 +305,25 @@
     grid-column: 2 / 2;
   }
 
+
+ /* Delete hovereffect */
+
+ .overlay {
+    opacity: 1;
+  }
+
+  .hovereffect h2{
+    opacity: 1;
+    transform:none;
+    font-size:1.4rem;
+  }
+  /*  */
+
+  .modal {
+    width: 80%;
+    height: auto;
+  }
+
   .experience-container {
     width: 100%;
   }
@@ -355,7 +374,7 @@
 }
 @media (max-width: 31em) {
   html {
-    font-size: 46%;
+    font-size: 45%;
   }
 
   .slide_content--active {
@@ -363,12 +382,17 @@
     padding: 10rem 1rem 6rem 1rem;
   }
 
+  .experience-small {
+    padding: 2rem 0 2rem 0;
+    gap:2rem;
+  }
+
   .education {
-    column-gap: 6.6rem;
+    column-gap: 4rem;
   }
 
   .skills {
-    column-gap: 6rem;
+    column-gap: 4rem;
   }
 
   .hobby {
