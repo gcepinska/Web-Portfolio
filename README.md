@@ -1,5 +1,5 @@
 # Web-Portfolio
-My very first web project ! 🎈🎉😊
+My very first Website ! 🎈🎉😊
 
 It's my portfolio with all previous professional work as a construction engineer and Project Manager.
 
